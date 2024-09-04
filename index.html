@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça ao Tesouro na Europa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .step {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        .step:hover {
+            background-color: #f0f0f0;
+        }
+        .hint {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f5ff;
+            border: 1px solid #007bff;
+        }
+    </style>
+    <script>
+        function showHint(stepId) {
+            var hint = document.getElementById(stepId);
+            if (hint.style.display === "none") {
+                hint.style.display = "block";
+            } else {
+                hint.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Caça ao Tesouro na Europa</h1>
+
+<div class="container">
+    <!-- Etapa 1 -->
+    <div class="step" onclick="showHint('hint1')">
+        1. Comece sua jornada em Londres, Reino Unido.
+    </div>
+    <div id="hint1" class="hint">
+        Dica: Visite o Big Ben e procure por um bilhete escondido na base do relógio. Ele contém a próxima pista.
+    </div>
+
+    <!-- Etapa 2 -->
+    <div class="step" onclick="showHint('hint2')">
+        2. Siga para Amsterdã, Países Baixos.
+    </div>
+    <div id="hint2" class="hint">
+        Dica: No Museu Van Gogh, procure por um quadro que parece fora do lugar. A chave para o próximo destino está atrás dele.
+    </div>
+
+    <!-- Etapa 3 -->
+    <div class="step" onclick="showHint('hint3')">
+        3. Viaje para Berlim, Alemanha.
+    </div>
+    <div id="hint3" class="hint">
+        Dica: Perto do Portão de Brandemburgo, um velho livro guardado na biblioteca local contém um mapa secreto.
+    </div>
+
+    <!-- Etapa 4 -->
+    <div class="step" onclick="showHint('hint4')">
+        4. Próxima parada: Praga, República Tcheca.
+    </div>
+    <div id="hint4" class="hint">
+        Dica: Na Praça da Cidade Velha, um artista de rua te entregará uma carta enigmática. Resolva o enigma para avançar.
+    </div>
+
+    <!-- Etapa 5 -->
+    <div class="step" onclick="showHint('hint5')">
+        5. Continue para Viena, Áustria.
+    </div>
+    <div id="hint5" class="hint">
+        Dica: Visite a Ópera Estatal de Viena. Embaixo do palco, uma marcação antiga indica seu próximo destino.
+    </div>
+
+    <!-- Etapa 6 -->
+    <div class="step" onclick="showHint('hint6')">
+        6. Chegue até Roma, Itália.
+    </div>
+    <div id="hint6" class="hint">
+        Dica: No Coliseu, procure por uma pedra solta. Atrás dela, está uma pequena caixa com a próxima pista.
+    </div>
+
+    <!-- Etapa 7 -->
+    <div class="step" onclick="showHint('hint7')">
+        7. A jornada termina em Paris, França.
+    </div>
+    <div id="hint7" class="hint">
+        Dica: No topo da Torre Eiffel, sob o olhar de milhões, o tesouro está escondido em um compartimento secreto.
+    </div>
+</div>
+
+</body>
+</html>
